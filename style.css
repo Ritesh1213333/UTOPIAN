@@ -1,0 +1,287 @@
+@font-face {
+    font-family: "conquera_bold";
+    src: url('./fonts/Conquera-Bold.ttf');
+}
+
+@font-face {
+    font-family: "conquera_medium";
+    src: url('./fonts/Conquera-Medium.ttf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: #c6c9c3;
+}
+
+#navbar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "conquera_medium";
+    /* background-color: blueviolet; */
+}
+
+#navbar h1 {
+    font-size: 11px;
+    font-weight: 200;
+}
+
+#navbar #menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#menu #logo {
+    font-size: 11px;
+    margin-bottom: 9px;
+    font-weight: 800;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #111;
+    font-size: 10px;
+    font-family: "conquera_medium";
+
+}
+
+
+#navbar #icon {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    width: 60px;
+    height: 100%;
+    font-size: 25px;
+    padding-top: 15px;
+    background-color: #111;
+}
+
+
+/* end navbar */
+
+
+
+/* section1 */
+
+#section_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    /* background-color: aquamarine; */
+}
+
+#section_1 #left_container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 24%;
+    height: 100%;
+    /* background-color: rgb(182, 29, 29); */
+}
+
+#left_container #left_one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 50%;
+    /* background-color: rgb(119, 119, 255); */
+}
+
+#left_container #left_one #top_text h1 {
+    font-family: "conquera_medium";
+    font-weight: 200;
+    font-size: 10px;
+    margin-bottom: 10px;
+    /* background-color: burlywood; */
+}
+
+#left_container #left_one #bottom_icon {
+    display: flex;
+    font-size: 18px;
+    gap: 30px;
+    padding-bottom: 20px;
+    /* background-color: rgb(157, 222, 135); */
+}
+
+
+#left_container #right_one {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(246, 198, 198); */
+}
+
+#left_container #right_one #season {
+    position: absolute;
+    top: 110px;
+    left: 2px;
+    font-size: 6px;
+    /* background-color: #ffb3b3; */
+    font-family: "conquera_medium";
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+}
+
+#left_container #right_one #big_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 70px;
+    margin-top: -37px;
+    line-height: 110px;
+    /* background-color: #a6fa6a; */
+    font-family: "conquera_bold";
+}
+
+
+#section_1 img {
+    width: 640px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-45%, 0%);
+}
+
+#section_1 #right_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    width: 360px;
+    height: 50%;
+    /* background-color: palevioletred; */
+}
+#section_1 #right_container .service{
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: rgb(204, 255, 0); */
+}
+#section_1 #right_container #service2{
+    display: flex;
+    flex-direction: row !important;
+    /* background-color: bisque; */
+}
+
+#section_1 #right_container #service2 #left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#section_1 #right_container .service h1{
+    font-size: 10px;
+    color: #282828;
+
+}
+
+#section_1 #right_container .service p{
+    line-height: 30px;
+    font-size: 10px;
+}
+
+#section_1 #right_container #service2 #cir_arrow{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    /* background-color: rgb(95, 95, 255); */
+    height: 100%;
+}
+
+#section_1 #right_container #service2 #cir_arrow .cir{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #111;
+
+}
+
+#section_1 #bottom_img{
+    display: flex;
+    align-items: end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 120px;
+    /* background-color: #ff6767; */
+}
+
+#section_1 #bottom_img #image1{
+    width: 60%;
+    height: 100%;
+    background-image: url('./image.png');
+    background-position: center;
+    background-size: cover;
+    border: 3px solid #111;
+}
+#section_1 #bottom_img #image2{
+    width: 40%;
+    height: 70%;
+    background-image: url('./bottom_img2.jpg');
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #4e532d;
+}
+
+#section_1 #right_container #service2 #cir_arrow #line_wrapper{
+    /* background-color: #3e3e22; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+#section_1 #right_container #service2 #cir_arrow #line{
+    width: 50px;
+    height: 1px;
+    background-color: rgb(118, 118, 118);
+}
+#section_1 .bottom_cir{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+
+#section_1 .bottom_cir .cir{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #afafaf;
+}
+
+#section_1 .bottom_cir #white_cir{
+    background-color: #ffffff;
+}
